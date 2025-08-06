@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <script src="./main.js"></script>
+  <!-- <script src="./desktops.js"></script> -->
+  <!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
+  <link href="./flowbite.min.css" rel="stylesheet" />
+  <script src="./flowbite.main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./webkit.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="text-[#1d1d1f] m-0 p-0" style="scroll-behavior: smooth; overflow-x: hidden; width: 100vw; height: 100vh;">
+
+  <!--Global Navbar -->
+  <nav class="bg-white w-full top-0 start-0 h-10">
+
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
+
+
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-light  items-center rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+
+          <div class="brand flex items-center ">
+            <a href="https://flowbite.com/" class="flex space-x-3 rtl:space-x-reverse">
+              <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse store&sale">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                <path fill="black"
+                  d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                </path>
+              </svg>
+            </div>
+            <div class="px-8">
+              <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill="black"
+                  d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+
+
+          <!-- <button type="button" class="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button> -->
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15" />
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 13h15" />
+            </svg>
+          </button>
+
+
+
+          <!-- Dropdown 1 -->
+          <li class="relative group">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">Store</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">Mac</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+          <!-- Dropdown 3 -->
+          <li class="relative group">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">iPad</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hoverunderline">UI/UX</a>
+            </div>
+          </li>
+          <!-- Dropdown 4 -->
+          <li class="relative group">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">iPhone</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+          <!-- Dropdown 5 -->
+          <li class="relative group">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem] ">Watch</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+          <!-- Dropdown 6 -->
+          <li class="relative group">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem] ">AirPods</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+          <!-- Dropdown 7 -->
+          <li class="relative group">
+            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem] ">TV & Home</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+          <!-- Dropdown 8 -->
+          <li class="relative group">
+            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem] ">Entertainment</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+          <!-- Dropdown 9 -->
+          <li class="relative group">
+            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem] ">Accesories</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+          <!-- Dropdown 10 -->
+          <li class="relative group">
+            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem]">Support</a>
+            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
+              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
+              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            </div>
+          </li>
+
+        </ul>
+
+        </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+
+
+  <!-- nav2 -->
+  <nav class="bg-white w-full top-0 start-0">
+
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto h-fit">
+
+
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-light  items-center rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+
+
+
+          <!-- <button type="button" class="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button> -->
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15" />
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 13h15" />
+            </svg>
+          </button>
+
+
+
+          <!-- Dropdown 1 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 72 56" width="72">
+                <path d="m0 0h72v56h-72z" fill="none" />
+                <path
+                  d="m68 50v-22.0193c0-1.0939-.8867-1.9807-1.9807-1.9807h-32.0386c-1.094 0-1.9807.8868-1.9807 1.9807v22.0193h-4v.5c0 .2761.1118.5261.293.7071.1809.181.4309.2929.707.2929h2l.2859.5h3.4282l.2859-.5h30l.2859.5h3.4282l.2859-.5h2c.5522 0 1-.4478 1-1v-.5zm-1.5 0h-33v-22.0193c0-.265.2156-.4807.4807-.4807h13.7693c0 .5522.4478 1 1 1h2.5c.5522 0 1-.4478 1-1h13.7693c.2651 0 .4807.2156.4807.4807zm-39.5 0h-20.5v-26c0-.2757.2244-.5.5-.5h16.7598c.0269.5552.4771 1 1.0391 1h3.4023c.562 0 1.0122-.4448 1.0391-1h16.7598c.2756 0 .5.2243.5.5v1h1.5v-1c0-1.1046-.8955-2-2-2h-39.0001c-1.1045 0-2 .8954-2 2v26h-5v.5c0 .5522.4478 1 1 1h3l.2859.5h3.4282l.2859-.5h19.2783c-.1724-.2953-.2783-.6341-.2783-1z"
+                  fill="#1d1d1f" />
+              </svg>
+              MacBook Air</a>
+          </li>
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 72 56" width="72">
+                <path d="m0 0h72v56h-72z" fill="none" />
+                <path
+                  d="m68 49v-23c0-1.1046-.8954-2-2-2h-34c-1.1046 0-2 .8954-2 2v23h-4v1.2122c0 .7416.6012 1.2878 1.3429 1.2878h2.3754l.2144.5h2.5713l.2144-.5h32.2817l.2144.5h2.5713l.2144-.5h2.6571c.7417 0 1.3429-.5461 1.3429-1.2878v-1.2122h-4zm-1.5 0h-35v-23c0-.2757.2242-.5.5-.5h14.5v.06c0 .5192.4209.94.9399.94h3.1201c.519 0 .9399-.4208.9399-.94v-.06h14.5c.2758 0 .5.2243.5.5v23zm-41.5 0h-19.5v-27c0-.2757.2242-.5.5-.5h17.5v.06c0 .5192.4209.94.9399.94h3.1201c.519 0 .9399-.4208.9399-.94v-.06h17.5c.2758 0 .5.2243.5.5v1.0184h1.5v-1.0184c0-1.1046-.8954-2-2-2h-39.9999c-1.1046 0-2 .8954-2 2v27h-4v1.2122c0 .7416.6797 1.2878 1.5181 1.2878h1.8298l.2144.5h2.5713l.2144-.5h19.0471c-.2502-.3646-.395-.8066-.395-1.2878v-1.2122z"
+                  fill="#1d1d1f" />
+              </svg>
+              MacBook Pro
+              <p class="flex justify-center text-red-700 text-[0.6rem] font-medium h-0">New</p>
+            </a>
+          </li>
+          <!-- Dropdown 3 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="56">
+                <path fill="none" d="M0 0H50V56H0z" />
+                <path
+                  d="M19 52h12v-7.5H19V52zm29.5-42h-47A1.5 1.5 0 0 0 0 11.5v31A1.5 1.5 0 0 0 1.5 44h47a1.5 1.5 0 0 0 1.5-1.5v-31a1.5 1.5 0 0 0-1.5-1.5zm0 28h-47V12a.5.5 0 0 1 .5-.5h46a.5.5 0 0 1 .5.5v26z"
+                  fill="#1d1d1f" />
+              </svg>
+              iMac
+              <p class="flex justify-center text-red-700 text-[0.6rem] font-medium h-0">New</p>
+            </a>
+          </li>
+          <!-- Dropdown 4 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 18 56" width="18" class="mx-auto">
+                <path d="m0 0h18v56h-18z" fill="none" />
+                <path
+                  d="m0 45v5.4116c0 .325.2634.5884.5884.5884h.4116l1 1h14l1-1h.4116c.325 0 .5884-.2634.5884-.5884v-5.4116zm15.625 5.5c-.3452 0-.625-.2798-.625-.625s.2798-.625.625-.625.625.2798.625.625-.2798.625-.625.625z"
+                  fill="#1d1d1f" />
+              </svg>
+              Mac mini
+              <p class="text-red-700 text-[0.6rem] font-medium h-0">New</p>
+            </a>
+          </li>
+
+
+          <!-- Dropdown 5 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem] ">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 28 56" width="28">
+                <path d="m0 0h28v56h-28z" fill="none" />
+                <path
+                  d="m0 38v11.9199c0 .5966.4836 1.0801 1.0801 1.0801h.9199l1.5 1h21l1.5-1h.9199c.5966 0 1.0801-.4836 1.0801-1.0801v-11.9199zm23.875 12c-.6213 0-1.125-.5037-1.125-1.125s.5037-1.125 1.125-1.125 1.125.5037 1.125 1.125-.5037 1.125-1.125 1.125z"
+                  fill="#1d1d1f" />
+              </svg>
+              Mac Studio</a>
+          </li>
+
+          <!-- Dropdown 6 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem] ">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 42 56" width="42">
+                <path d="m0 0h42v56h-42z" fill="none" />
+                <path
+                  d="m42 49v-40h-2v-4c0-.5523-.4478-1-1-1s-1 .4477-1 1v4h-34v-4c0-.5523-.4477-1-1-1s-1 .4477-1 1v4h-2v40h2v1.4592c0 .2761-.2239.5-.5.5h-1.5v1.0408h6v-1.0408h-1.5c-.2761 0-.5-.2239-.5-.5v-1.4592h34v1.4592c0 .2761-.2239.5-.5.5h-1.5v1.0408h6v-1.0408h-1.5c-.2761 0-.5-.2239-.5-.5v-1.4592zm-20.8566-25.6246c.1108-.2449.2487-.4725.4344-.6773.1739-.1912.3843-.3596.6252-.4897.2393-.1281.4916-.1931.7479-.2084.0118.0364.0157.0689.0157.0995v.1069c0 .2527-.0557.5089-.1591.7654-.105.2543-.2389.4819-.4167.6808-.1743.2045-.3694.3635-.5911.4818-.2183.1207-.4419.1779-.6696.1779-.0936 0-.1414-.0133-.1473-.0533-.002-.027-.002-.0748-.002-.1454 0-.2468.0556-.4896.1626-.7384zm3.5617 6.7043c-.1187.2335-.239.4572-.3635.6522-.1321.201-.2582.3808-.3749.532-.1281.1508-.2296.2581-.2965.3326-.1375.1147-.2734.2143-.4188.2871-.1359.0744-.2812.1031-.434.1031-.0975 0-.2162-.0208-.3522-.0612-.1414-.0419-.2812-.0862-.4266-.134-.1473-.0478-.2946-.0897-.4399-.1375-.1528-.0384-.2809-.0576-.4016-.0576-.1301 0-.2754.0192-.4247.067-.1567.0424-.3099.0901-.4611.1399-.1567.0513-.302.0936-.4286.1375-.1281.0384-.2448.0591-.3231.0591-.1262 0-.2371-.0208-.3463-.0591-.1129-.0439-.2292-.1148-.3518-.2104-.1222-.0975-.2429-.2276-.3768-.3921-.1395-.1626-.2888-.3616-.4533-.6064-.1551-.2256-.2871-.4744-.4207-.7419-.1226-.2738-.2394-.5511-.3271-.8458-.0862-.2867-.1591-.5754-.2048-.872-.0498-.2946-.0823-.5778-.0823-.8571 0-.4282.0615-.8262.1876-1.1917.1261-.3611.304-.6828.5261-.9468.2236-.2715.4798-.4744.7745-.6232.2926-.1438.6158-.2182.962-.2182.2563 0 .5587.0744.907.2182.3423.1489.5793.2236.7172.2236.0478 0 .132-.0211.2504-.067.1245-.0439.3099-.1069.5413-.1951.2296-.0784.4055-.134.5414-.1646.1379-.0306.2774-.0478.4208-.0478.3866 0 .7443.0917 1.0961.2773.3444.1818.6217.4227.8226.7286-.3713.2241-.6428.4916-.8132.8055-.1626.3079-.2465.6788-.2465 1.098 0 .4399.1129.8395.3478 1.203.2296.3655.5547.6428.972.8262-.0823.2507-.1838.5014-.2985.7384z"
+                  fill="#1d1d1f" />
+              </svg>
+              Mac Pro</a>
+          </li>
+
+          <!-- Dropdown 7 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 pt-[1.2rem] text-center text-black hover:bg-white rounded-md text-[0.8rem] ">
+              <svg xmlns="http://www.w3.org/2000/svg" height="54" viewBox="0 0 45 54" width="45">
+                <path d="m0 0h45v54h-45z" fill="none" />
+                <path
+                  d="m14.5 13h-9a5.5066 5.5066 0 0 0 -5.5 5.5v26a5.5069 5.5069 0 0 0 5.5 5.5h9a5.5069 5.5069 0 0 0 5.5-5.5v-26a5.5066 5.5066 0 0 0 -5.5-5.5zm3.5 31.5a3.5042 3.5042 0 0 1 -3.5 3.5h-9a3.5042 3.5042 0 0 1 -3.5-3.5v-26a3.5042 3.5042 0 0 1 3.5-3.5h9a3.5042 3.5042 0 0 1 3.5 3.5zm26-8h1v6h-1zm-12-23.5h6v1h-6zm12 15.5h1v6h-1zm-12 20.5h6v1h-6zm-6-14.5h-1v-6h1zm0-8h-1v-6h1zm0 16h-1v-6h1zm14-28.45v-1.0247a5.5056 5.5056 0 0 1 5 5.4747h-1a4.4847 4.4847 0 0 0 -4-4.45zm4 30.45h1a5.5056 5.5056 0 0 1 -5 5.4747v-1.0247a4.4847 4.4847 0 0 0 4-4.45zm-14-31.4747v1.0247a4.4847 4.4847 0 0 0 -4 4.45h-1a5.5056 5.5056 0 0 1 5-5.4747zm0 35.9247v1.0251a5.5056 5.5056 0 0 1 -5-5.4751h1a4.4847 4.4847 0 0 0 4 4.45zm14-28.45h1v6h-1z"
+                  fill="#1d1d1f" />
+              </svg>
+              Compare</a>
+          </li>
+
+          <!-- Dropdown 8 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem] ">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 90 56" width="90">
+                <path d="m0 0h90v56h-90z" fill="none" />
+                <path
+                  d="m25 52h16v-10.5h-16zm8.0148-12.5h-31.0148c-.2761 0-.5-.2239-.5-.5v-34c0-.2762.2239-.5.5-.5h62c.2761 0 .5.2238.5.5v2.0148h1.5v-2.5148c0-.8284-.6716-1.5-1.5-1.5h-63c-.8284 0-1.5.6716-1.5 1.5v35c0 .8284.6716 1.5 1.5 1.5h32.0318c-.3196-.4182-.517-.9342-.517-1.5zm55.4852-31.5h-53c-.8284 0-1.5.6716-1.5 1.5v30c0 .8284.6716 1.5 1.5 1.5h53c.8284 0 1.5-.6716 1.5-1.5v-30c0-.8284-.6716-1.5-1.5-1.5zm0 31c0 .2761-.2239.5-.5.5h-52c-.2761 0-.5-.2239-.5-.5v-29c0-.2762.2239-.5.5-.5h52c.2761 0 .5.2238.5.5zm-24.625 2.75c0 .9665-.7835 1.75-1.75 1.75h-.25c-.9665 0-1.75-.7835-1.75-1.75v-.25h-5.125v10.5h14v-10.5h-5.125z"
+                  fill="#1d1d1f" />
+              </svg>
+              displays</a>
+          </li>
+
+          <!-- Dropdown 9 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 pt-5 text-center text-black hover:bg-white rounded-md text-[0.8rem] ">
+              <svg xmlns="http://www.w3.org/2000/svg" height="54" viewBox="0 0 34 54" width="34">
+                <path d="m0 0h34v54h-34z" fill="none" />
+                <path
+                  d="m17 16.5438c9.9364 0 16.5 7.0705 16.5 17.7588 0 4.9229-1.4384 10.3414-3.8522 14.554-.248.4626-.7275.6278-1.2069.4791-.6944 1.0573-1.8848 1.4537-3.2735 1.0573-1.7194-.5121-2.4965-1.9659-1.984-3.7004l2.4469-8.0452c.5125-1.7015 1.9344-2.478 3.6869-1.9659.8101.2478 1.4053.6938 1.769 1.2885.1819-1.239.2645-2.4615.2645-3.6674 0-9.3502-5.7535-15.6113-14.3507-15.6113-8.6137 0-14.3507 6.261-14.3507 15.6113 0 1.2059.0827 2.4284.2645 3.6509.3472-.5782.9424-1.0242 1.7525-1.272 1.7525-.5121 3.1743.2643 3.6869 1.9659l2.4469 8.0452c.5125 1.7181-.2645 3.1883-1.984 3.7004-1.3888.3965-2.5792 0-3.2735-1.0573-.4795.1487-.9589-.0165-1.2069-.4791-2.4138-4.2126-3.8357-9.6311-3.8357-14.554 0-10.6883 6.5471-17.7588 16.5-17.7588z"
+                  fill="#1d1d1f" />
+              </svg>
+              Accesories</a>
+          </li>
+
+          <!-- Dropdown 10 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center pb-4 text-center text-black hover:bg-white rounded-md text-[0.8rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 35 54" viewBox="0 0 35 54">
+                <path
+                  d="m16.3 36.64c0 2.86-1.49 4.66-3.87 4.66s-3.87-1.81-3.87-4.66c0-2.87 1.49-4.67 3.87-4.67s3.87 1.8 3.87 4.67zm3.32-10.09-1.04.07c-.59.04-.85.25-.85.63 0 .4.33.62.79.62.63 0 1.1-.41 1.1-.96zm14.88 6.45c0 9.49-7.51 17-17 17s-17-7.51-17-17 7.51-17 17-17 17 7.51 17 17zm-13.06-6.66c0 1.38.76 2.22 2 2.22 1.05 0 1.71-.59 1.82-1.43h-.82c-.11.46-.47.71-1 .71-.7 0-1.13-.57-1.13-1.5 0-.92.43-1.47 1.13-1.47.56 0 .91.32 1 .73h.82c-.11-.82-.75-1.44-1.82-1.44-1.24-.01-2 .83-2 2.18zm-11.43-2.1v4.24h.84v-2.6c0-.55.39-.99.9-.99.5 0 .82.3.82.78v2.81h.82v-2.68c0-.51.35-.91.9-.91s.82.28.82.87v2.72h.84v-2.93c0-.88-.5-1.4-1.36-1.4-.59 0-1.08.3-1.29.76h-.07c-.19-.46-.59-.76-1.17-.76-.57 0-1 .28-1.18.76h-.06v-.68zm7.78 12.4c0-3.69-2.06-6.01-5.36-6.01s-5.36 2.32-5.36 6.01 2.06 6 5.36 6 5.36-2.32 5.36-6zm.52-8.09c.56 0 1.02-.24 1.28-.67h.07v.6h.81v-2.9c0-.89-.6-1.42-1.67-1.42-.97 0-1.65.47-1.74 1.18h.81c.09-.31.42-.48.89-.48.57 0 .87.26.87.73v.37l-1.15.07c-1.01.06-1.58.5-1.58 1.27-.01.76.59 1.25 1.41 1.25zm9.17 10.59c0-1.65-.96-2.61-3.38-3.14l-1.29-.28c-1.59-.35-2.21-.98-2.21-1.89 0-1.18 1.12-1.89 2.57-1.89 1.52 0 2.52.78 2.65 2.06h1.45c-.07-1.97-1.74-3.36-4.06-3.36-2.41 0-4.1 1.35-4.1 3.26 0 1.65 1.01 2.71 3.34 3.22l1.29.28c1.61.35 2.26 1 2.26 1.97 0 1.14-1.15 1.97-2.72 1.97-1.67 0-2.83-.76-3-2.01h-1.45c.14 2.01 1.83 3.31 4.37 3.31 2.59 0 4.28-1.35 4.28-3.5z"
+                  fill="#1d1d1f" />
+              </svg>
+              Sequoia</a>
+          </li>
+
+          <!-- Dropdown 11 -->
+          <li class="relative group">
+            <a href="#"
+              class="flex flex-col items-center py-4 text-center text-black hover:bg-white rounded-md text-[0.8rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 106 56" width="106">
+                <path d="m0 0h106v56h-106z" fill="none" />
+                <path
+                  d="m23.9924 41h54.0151c.5481 0 .9924-.4444.9924-.9926v-31.0149c0-.5482-.4443-.9925-.9924-.9925h-54.0151c-.5481 0-.9924.4443-.9924.9925v31.015c0 .5482.4443.9926.9924.9926zm.5076-31.5h53v30h-53zm-22.8779 20.5v-.5c0-.9648.75-1.75 1.6729-1.75h18.7198v-1.75h-19.5815c-1.344 0-2.4333 1.0894-2.4333 2.4333v3.314c.8962-.0148 1.6221-.7916 1.6221-1.7473zm51.2529 11.75c0 .9665-.7834 1.75-1.75 1.75h-.25c-.9666 0-1.75-.7835-1.75-1.75v-.25h-5.125v10.5h14v-10.5h-5.125zm49.125 8.25v-22.0193c0-1.0939-.8867-1.9807-1.9807-1.9807h-20.0341v1.4855h1.7648v.0145c0 .5522.4478 1 1 1h2.5c.5522 0 1-.4478 1-1v-.0145h13.7693c.2731 0 .4952.2222.4952.4952v22.0193h-33.0291v-8.0148h-1.4855v8.0148h-4v.5c0 .5522.4478 1 1 1h2l.2859.5h3.4282l.2859-.5h30l.2859.5h3.4282l.2859-.5h2c.5522 0 1-.4478 1-1v-.5h-4zm-79.9852-9.9925v-11.7575h-18.7199c-.6465 0-1.1729.5605-1.1729 1.25v.5c0 1.2316-.9495 2.2327-2.1221 2.2473v17.3193c0 1.3439 1.0894 2.4333 2.4333 2.4333h31.1333c1.344 0 2.4333-1.0895 2.4333-2.4333v-7.5815h-12.0074c-1.0906 0-1.9778-.8872-1.9778-1.9777zm-3.9491-2.7316c.0507-.1121.1138-.2162.1987-.3099.0796-.0875.1758-.1646.2861-.2241.1095-.0586.225-.0884.3423-.0953.0054.0167.0071.0316.0071.0455v.0489c0 .1157-.0254.2329-.0728.3503-.0481.1163-.1094.2205-.1907.3116-.0798.0936-.1692.1663-.2705.2205-.0999.0552-.2024.0814-.3064.0814-.043 0-.0647-.0061-.0674-.0244-.001-.0123-.001-.0342-.001-.0665 0-.113.0254-.2241.0745-.338zm1.6299 3.068c-.0543.1069-.1094.2092-.1664.2985-.0604.092-.1182.1743-.1715.2435-.0586.069-.1051.1182-.1357.1522-.063.0525-.1252.098-.1917.1314-.0623.0341-.1287.0471-.1987.0471-.0446 0-.0989-.0095-.1611-.028-.0647-.0192-.1287-.0394-.1952-.0613-.0674-.0219-.1349-.0411-.2013-.0629-.0699-.0176-.1285-.0264-.1838-.0264-.0594 0-.126.0088-.1943.0306-.0717.0193-.1417.0413-.2109.064-.0718.0234-.1382.0428-.196.0629-.0587.0175-.1121.027-.1479.027-.0577 0-.1084-.0095-.1584-.027-.0518-.0201-.105-.0526-.161-.0963-.056-.0446-.1112-.1041-.1725-.1794-.0638-.0744-.1321-.1655-.2074-.2775-.0709-.1032-.1315-.217-.1925-.3395-.0562-.1253-.1096-.2522-.1497-.387-.0396-.1312-.0729-.2634-.0938-.399-.0229-.1348-.0377-.2644-.0377-.3923 0-.1959.0282-.3781.0858-.5453.0577-.1653.1392-.3124.2407-.4333.1024-.1242.2197-.2171.3545-.2852.1339-.0658.2817-.0999.4403-.0999.1173 0 .2556.0341.415.0999.1566.0681.265.1024.3282.1024.0219 0 .0603-.0096.1145-.0306.057-.0201.1418-.049.2478-.0893.105-.0358.1855-.0613.2478-.0753.063-.014.1268-.0219.1924-.0219.177 0 .3407.042.5017.127.1575.0832.2844.1934.3765.3334-.1699.1025-.2942.225-.3722.3686-.0743.1409-.1128.3107-.1128.5025 0 .2013.0516.3842.1593.5505.105.1672.2538.2942.4447.3781-.0377.1147-.0841.2295-.1366.338z"
+                  fill="#1d1d1f" />
+              </svg>
+              Shop Mac</a>
+          </li>
+        </ul>
+
+        </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ProductNav -->
+  <nav class="mx-auto text-center text-[0.8rem] bg-[#f5f5f7] p-4 w-[100%] mt-[10px]">
+    Get up to ₹10000.00 instant cashback on selected Mac models with eligible cards.◊ Plus up to 12 months of No Cost
+    EMI.‡
+    <a href="" class="hover:underline text-blue-600">
+      Shop Mac<i class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i>
+    </a>
+  </nav>
+
+  <main>
+    <!-- section 1 -->
+    <section class="mac py-28 m-auto">
+      <div class="flex justify-between px-20">
+        <div class="heading">
+          <h1 class="text-6xl font-semibold">Mac</h1>
+        </div>
+
+        <div class="w-52 text-2xl font-semibold">
+          If you can dream it,
+          Mac can do it.
+        </div>
+      </div>
+
+      <div class="video-container py-20 relative">
+        <video class="rounded-[2rem]" autoplay loop muted src="./assets/videos/apple.mp4"></video>
+
+        <!-- Play icon positioned directly on the video at the bottom-right corner -->
+        <div class="absolute playpause bottom-5 right-5 mb-[6rem] mr-[1rem] text-center">
+          <i class="fa-solid fa-play text-gray-600 text-xs text-center pl-[.15rem]" id="ctrlIcon"
+            aria-hidden="true"></i>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- section 2 -->
+    <section class="mac py-0 m-auto h-[125vh]">
+
+      <!-- div1 -->
+      <div class="px-20">
+        <div class="heading">
+          <h1 class="text-6xl font-medium">Get to know Mac.</h1>
+        </div>
+      </div>
+
+      <!-- div2 -->
+      <div class="cards py-20 h-[100vh]">
+        <ul id="kfsjksfjk" class="flex gap-6 p-11 overflow-x-auto overflow-y-scroll w-full scrollcontent"
+          style="scroll-behavior: smooth;">
+
+
+          <!-- Card 1 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[350px] ml-10">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="font-semibold text-[1.1rem]">Apple Intelligence and macOS</p>
+                    <p class="text-[1.475rem] gradient-text">Built For Apple Intelligence</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_intelligence__esfi0qmvis6e_medium_2x.jpg" alt="" height="370px"
+                      width="370px" style="border-radius: 2rem; object-fit: cover; object-position: 20% center;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 2 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[360px]">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="text-white text-[1.1rem]">Performance and Battery Life</p>
+                    <p class="text-[1.475rem] font-semibold text-white">Go fast.Go far.</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_performance__dh5hyac1zf8m_small_2x.jpg" alt="" height="320px"
+                      width="370px" style="border-radius: 2rem; object-fit: cover;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Card3 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[350px]">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="text-black text-[1.1rem]">Mac and iPhone</p>
+                    <p class="text-[1.475rem] font-semibold text-black">Dream team.</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_iphone__gh1tblkt6bqm_medium_2x.jpg" alt="" height="320px"
+                      width="370px"
+                      style="border-radius: 2rem; object-fit: cover; object-position: 20% center; height: 370px;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+          <!-- Card4 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[350px]">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="text-[1.1rem]">Compatibility</p>
+                    <p class="text-[1.475rem] font-semibold" style="line-height: 1.8rem;">Mac runs your &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; favourite apps.</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_compatibility__cu59oukz81ci_medium.jpg" alt="" height="370px"
+                      width="370px" style="border-radius: 2rem; object-fit: cover; object-position: 20% center;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+          <!-- Card5 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[350px]">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="text-white text-[1.1rem]">Privacy and Security</p>
+                    <p class="text-[1.475rem] font-semibold text-white" style="line-height: 1.8rem;">Your business is
+                      &nbsp; &nbsp; &nbsp; nobody else's.</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_security__gfwda10khdym_small_2x.jpg" alt="" height="370px"
+                      width="370px" style="border-radius: 2rem; object-fit: cover; object-position: 20% center;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <!-- Card6 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[350px]">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="text-white text-[1.1rem]">Durablitu</p>
+                    <p class="text-[1.475rem] font-semibold text-white" style="line-height: 1.8rem;">Build to stand
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the test of time.</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_durability__epiwcuk7zkeq_small.jpg" alt="" height="370px"
+                      width="370px" style="border-radius: 2rem; object-fit: cover; object-position: 20% center;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-center" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+          <!-- Card7 -->
+          <li>
+            <div class="modal cursor-pointer">
+              <div class="card min-w-[350px]">
+                <div class="card-container relative">
+                  <div class="card-info absolute z-10 p-8">
+                    <p class="text-white text-[1.1rem]">Apple Values</p>
+                    <p class="text-[1.475rem] font-semibold text-white" style="line-height: 1.8rem;">Our values drive
+                      everything we do.</p>
+                  </div>
+                  <div class="card-image relative"> <!-- Remove absolute positioning here -->
+                    <img src="./assets/images/mac_values__c9gck9qi4kia_small_2x.jpg" alt="" height="370px" width="370px"
+                      style="border-radius: 2rem; object-fit: cover; object-position: 20% center;">
+                    <button class="add absolute mt-[-3.5rem] ml-[83%]">
+                      <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <!-- div3 -->
+      <div class="flex flex-end">
+        <button id="hvskhbsf" class="scrol absolute ml-[88%] leftscroll">
+          <i class="fa-solid fa-chevron-left text-black w-full h-full flex items-center justify-center rounded-full text-xs"
+            aria-hidden="true"></i>
+        </button>
+        <button id="krjkfejk" class="scrol absolute ml-[92%] rightscroll">
+          <i class="fa-solid fa-chevron-right text-black w-full h-full flex items-center justify-center rounded-full text-xs"
+            aria-hidden="true"></i>
+        </button>
+      </div>
+
+
+
+
+
+      <!-- Left,Right-Scroll -->
+
+
+
+    </section>
+
+
+
+
+
+    <!-- section 3 -->
+    <section class="bg-[rgba(250,250,250,1)] w-full py-20 h-fit">
+      <div>
+        <div class="flex justify-between px-20">
+          <div class="heading">
+            <h1 class="text-6xl font-semibold">Explore the line-up.</h1>
+          </div>
+          <div class="text-lg font-light text-blue-600">
+            <a href="" class="hover:underline">
+              Compare all models<i class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-20 pb-12 px-20">
+          <ul class="flex gap-7 text-xl font-extralight bg-white py-1 w-[25.6rem] rounded-full px-1">
+            <li class="toggle-button button-default rounded-full py-2 px-5 font-light"
+              onclick="toggleContent('Laptops')">Laptops</li>
+            <li class="toggle-button button-default rounded-full py-2 px-5 font-light"
+              onclick="toggleContent('Desktops')">Desktops</li>
+            <li class="toggle-button button-default rounded-full py-2 px-5 font-light"
+              onclick="toggleContent('Displays')">Displays</li>
+          </ul>
+        </div>
+
+        <div class="w-[100vw] overflow-scroll" id="content">
+          nothing error
+          <!-- This area will dynamically load content based on the selected category -->
+        </div>
+
+
+        <!-- section 3 part1 -->
+        <div class="mac py-16 w-[100vw]">
+
+          <!-- div1 -->
+          <div class="flex justify-between items-end px-20">
+            <div class="heading">
+              <h1 class="text-6xl font-medium w-[38rem]">Why Apple is the best place to buy Mac.</h1>
+            </div>
+            <div class="text-lg font-light text-blue-600">
+              <a href="" class="hover:underline">
+                Shop Mac<i class="fa-solid fa-chevron-right text-blue-600 text-xs ml-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- div2 -->
+          <div class="cards py-12 w-full">
+            <ul class="scrollcontent flex p-11 overflow-x-auto overflow-y-scroll w-full gap-6">
+
+
+              <!-- button 1 -->
+              <li>
+                <div class="modal">
+                  <div class="card min-w-[350px] ml-12">
+                    <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem]">
+                      <div class="pb-3"><img src="assets/images/card.png" alt="" style="min-height: 20px; width: 50px;">
+                      </div>
+                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Monthly payment options
+                        available.
+                      </h1>
+                      <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Choose the easy way to finance
+                        with
+                        convenient
+                        monthly payment options</p>
+
+                      <div class="flex justify-end mt-[-0.5rem]">
+                        <div class="flex justify-center w-[28px] h-[28px] rounded-full bg-black items-center"
+                          style="transform: scale(1.4);">
+                          <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                            aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- button 2 -->
+              <li>
+                <div class="modal">
+                  <div class="card min-w-[350px]">
+                    <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem]">
+                      <div class="pb-3"><img src="assets/images/desk.png" alt="" style="min-height: 20px; width: 50px;">
+                      </div>
+                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Customise Your Mac.
+                      </h1>
+                      <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Choose your chip, memory,
+                        storage,even colour.</p>
+
+                      <div class="flex justify-end mt-[1rem]">
+                        <div class="flex justify-center w-[28px] h-[28px] rounded-full bg-black items-center"
+                          style="transform: scale(1.4);">
+                          <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                            aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- button 3 -->
+              <li>
+                <div class="modal">
+                  <div class="card min-w-[350px]">
+                    <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem]">
+                      <div class="pb-3"><img src="assets/images/ship.png" alt="" style="min-height: 20px; width: 50px;">
+                      </div>
+                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Get flexible delivery and
+                        easy pickup.
+                      </h1>
+                      <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Get free delivery or pickup at
+                        your Apple Store.</p>
+
+                      <div class="flex justify-end mt-[1rem]">
+                        <div class="flex justify-center w-[28px] h-[28px] rounded-full bg-black items-center"
+                          style="transform: scale(1.4);">
+                          <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                            aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+
+
+              <!-- button 4 -->
+              <li>
+                <div class="modal">
+                  <div class="card min-w-[350px]">
+                    <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem]">
+                      <div class="pb-3"><img src="assets/images/connectionc.png" alt=""
+                          style="min-height: 20px; width: 70px;">
+                      </div>
+                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Meet your new Mac with
+                        Personal Setup.</h1>
+                      <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Jump into online sessions with a
+                        Specialist to set up your Mac and discover new features.</p>
+
+                      <div class="flex justify-end mt-[0rem]">
+                        <div class="flex justify-center w-[28px] h-[28px] rounded-full bg-black items-center"
+                          style="transform: scale(1.4);">
+                          <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                            aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+
+
+              <!-- button 5 -->
+              <li>
+                <div class="modal">
+                  <div class="card min-w-[350px]">
+                    <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem] mr-20">
+                      <div class="pb-3"><img src="assets/images/loop.png" alt="" style="min-height: 20px; width: 50px;">
+                      </div>
+                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Save with Apple Trade In.
+                      </h1>
+                      <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Get credit towards your next Mac
+                        when you trade in an eligible device at an Apple Store.</p>
+
+                      <div class="flex justify-end mt-[-0.6rem]">
+                        <div class="flex justify-center w-[28px] h-[28px] rounded-full bg-black items-center"
+                          style="transform: scale(1.4);">
+                          <i class="fa-solid fa-add text-gray-200 hover:text-white text-xs text-center"
+                            aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+          <!-- div3 -->
+          <div class="flex flex-end mt-[-2rem]">
+            <button class="scrol absolute ml-[88%] leftscroll">
+              <i class="fa-solid fa-chevron-left text-black text-xs text-center" aria-hidden="true"></i>
+            </button>
+            <button class="scrol absolute ml-[92%] rightscroll">
+              <i class="fa-solid fa-chevron-right text-black  text-xs text-center" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Left,Right-Scroll -->
+        <!-- <script>
+        // Select the single container and buttons using IDs
+        const container = document.getElementById('kfsjksfjk'); // Single scroll container
+        const backButton = document.getElementById('hvskhbsf'); // Back button
+        const frontButton = document.getElementById('krjkfejk'); // Front button
+
+        // Calculate the width of one card
+        const cardWidth = document.querySelector('.card').offsetWidth + 20; // Add gap if any
+
+        // Right button click handler
+        frontButton.onclick = function () {
+          sideScroll(container, 'right', 460); // Adjust step for smoother scroll
+        };
+
+        // Left button click handler
+        backButton.onclick = function () {
+          sideScroll(container, 'left', 460); // Adjust step for smoother scroll
+        };
+
+        // Side scrolling function with smooth behavior
+        function sideScroll(element, direction, distance) {
+          const scrollPosition = direction === 'left'
+            ? element.scrollLeft - distance
+            : element.scrollLeft + distance;
+          element.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+          setTimeout(() => updateScrollButtonColors(container, backButton, frontButton), 300); // Delay to ensure buttons update after scroll
+        }
+
+        // Update button colors when at the edges
+        function updateScrollButtonColors(container, back, front) {
+          // Check if at the left edge
+          if (Math.round(container.scrollLeft) <= 0) {
+            back.style.backgroundColor = '#e2e2e5'; // Active color when at left edge
+            back.style.pointerEvents = 'none';
+          } else {
+            back.style.backgroundColor = '#f3f3f4'; // Active color when scrolling
+            back.style.pointerEvents = 'auto';
+          }
+
+          // Check if at the right edge
+          if (Math.round(container.scrollLeft + container.clientWidth) >= container.scrollWidth) {
+            front.style.backgroundColor = '#f3f3f4'; // Edge color when at the right edge
+            front.style.pointerEvents = 'none';
+            // If at the right end, change the back button color to black
+            back.style.backgroundColor = '#e2e2e5'; // Change to black when at the right edge
+          } else {
+            front.style.backgroundColor = '#e2e2e5'; // Active color when scrolling
+            front.style.pointerEvents = 'auto';
+            back.style.backgroundColor = '#f3f3f4'; // Active color for back button when scrolling
+          }
+        }
+
+        // Ensure the function updates on both page load and scrolling
+        container.addEventListener('scroll', () => updateScrollButtonColors(container, backButton, frontButton));
+        window.addEventListener('load', () => updateScrollButtonColors(container, backButton, frontButton));
+
+      </script> -->
+
+        <!-- Global Left,Right-Scroll in js file -->
+
+        <script>
+
+          // Select all containers and buttons using class selectors
+          const containers = document.querySelectorAll('.scrollcontent'); // Multiple scroll containers
+          const backButtons = document.querySelectorAll('.leftscroll'); // Back buttons
+          const frontButtons = document.querySelectorAll('.rightscroll'); // Front buttons
+
+          // Loop through each container and set up the corresponding functionality
+          containers.forEach((container, index) => {
+            const back = backButtons[index];
+            const front = frontButtons[index];
+
+            // Calculate the width of one card
+            var cardWidth = document.querySelector('.card').offsetWidth + 20; // Add gap if any
+
+            front.onclick = function () {
+              sideScroll(container, 'right', cardWidth * 1.2); // Adjust step for smoother scroll
+            };
+
+            back.onclick = function () {
+              sideScroll(container, 'left', cardWidth * 1.2);  // Adjust step
+            };
+
+            // Side scrolling function with smooth behavior
+            function sideScroll(element, direction, distance) {
+              const scrollPosition = direction === 'left'
+                ? element.scrollLeft - distance
+                : element.scrollLeft + distance;
+              element.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+              setTimeout(() => updateScrollButtonColors(container, back, front), 300); // Delay to ensure buttons update after scroll
+            }
+
+            // Update button colors when at the edges
+            function updateScrollButtonColors(container, back, front) {
+              // Check if at the left edge
+              if (Math.round(container.scrollLeft) <= 0) {
+                back.style.backgroundColor = '#e2e2e5'; // Active color when at left edge
+                back.style.pointerEvents = 'none';
+              } else {
+                back.style.backgroundColor = '#f3f3f4'; // Active color when scrolling
+                back.style.pointerEvents = 'auto';
+              }
+
+              // Check if at the right edge
+              if (Math.round(container.scrollLeft + container.clientWidth) >= container.scrollWidth) {
+                front.style.backgroundColor = '#f3f3f4'; // Edge color when at the right edge
+                front.style.pointerEvents = 'none';
+                back.style.backgroundColor = '#e2e2e5'; // Change to black when at the right edge
+              } else {
+                front.style.backgroundColor = '#e2e2e5'; // Active color when scrolling
+                front.style.pointerEvents = 'auto';
+                back.style.backgroundColor = '#f3f3f4'; // Active color for back button when scrolling
+              }
+            }
+
+            // Ensure the function updates on both page load and scrolling
+            container.addEventListener('scroll', () => updateScrollButtonColors(container, back, front));
+            window.addEventListener('load', () => updateScrollButtonColors(container, back, front));
+          });
+        </script>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- section 4 -->
+    <section class="py-20 w-full">
+      <h1 class="px-20 py-4 text-6xl font-medium pb-16">Significant others.</h1>
+
+      <div
+        class="flex justify-between bg-[rgba(250,250,250,1)] pl-20 py-40 mx-20 rounded-3xl overflow-hidden relative h-[48.5rem]">
+        <div class="w-[50%]">
+          <div class="w-[72%] pb-4">
+            <!-- First Toggle Section: Mac and iPhone -->
+            <div class="toggle-section flex justify-between"
+              onclick="toggleContent('toggleParagraph1', 'chevronIcon1', this, 'mac-iphone.jpg')">
+              <h1 class="text-3xl font-medium">Mac and iPhone</h1>
+              <i id="chevronIcon1" class="fa-solid fa-chevron-down text-gray-500 text-lg text-center"
+                aria-hidden="true"></i>
+            </div>
+            <p id="toggleParagraph1"
+              class="w-[85%] font-light hiddenpara transition-all duration-300 ease-in-out opacity-0 transform -translate-y-4">
+              Answer calls or messages from your iPhone directly on your Mac. See and control what’s on your iPhone from
+              your Mac with iPhone Mirroring. Use Universal Clipboard to copy images, video or text from your iPhone,
+              then paste into another app on your nearby Mac. And thanks to iCloud, you can access your files from
+              either your iPhone or your Mac. And so much more.
+            </p>
+          </div>
+
+          <div class="h-[1px] w-[25vw] bg-[rgba(156,163,175,0.6)]"></div>
+
+          <div class="w-[72%] py-4">
+            <!-- Second Toggle Section: Mac and iPad -->
+            <div class="toggle-section flex justify-between"
+              onclick="toggleContent('toggleParagraph2', 'chevronIcon2', this, 'mac-ipad.jpg')">
+              <h1 class="text-3xl font-medium">Mac and iPad</h1>
+              <i id="chevronIcon2" class="fa-solid fa-chevron-down text-gray-500 text-lg text-center"
+                aria-hidden="true"></i>
+            </div>
+            <p id="toggleParagraph2"
+              class="w-[85%] font-light hiddenpara transition-all duration-300 ease-in-out opacity-0 transform -translate-y-4">
+              Sketch on your iPad and have it appear instantly on your Mac. Or use your iPad as a second display, so you
+              can work on one screen while you reference the other. You can even start a Final Cut Pro project on your
+              iPad and continue it on your Mac.
+            </p>
+          </div>
+
+          <div class="h-[1px] w-[25vw] bg-[rgba(156,163,175,0.6)]"></div>
+
+          <div class="w-[72%] py-4">
+            <!-- Third Toggle Section: Mac and Apple Watch -->
+            <div class="toggle-section flex justify-between"
+              onclick="toggleContent('toggleParagraph3', 'chevronIcon3', this, 'mac-applewatch.jpg')">
+              <h1 class="text-3xl font-medium">Mac and Apple Watch</h1>
+              <i id="chevronIcon3" class="fa-solid fa-chevron-down text-gray-500 text-lg text-center"
+                aria-hidden="true"></i>
+            </div>
+            <p id="toggleParagraph3"
+              class="w-[85%] font-light hiddenpara transition-all duration-300 ease-in-out opacity-0 transform -translate-y-4">
+              Automatically log in to your Mac when you're wearing your Apple Watch with Auto Unlock. No password typing
+              required.
+            </p>
+          </div>
+        </div>
+
+        <!-- div2 -->
+        <div class="w-[100%] mr-[-18rem] imagemargin">
+          <img id="toggleImage" src="assets/images/mac-iphone.jpg" width="100vw" height="auto" alt=""
+            style="min-height: auto; min-width: 50rem;">
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Function to toggle content for each section independently
+      function toggleContent(paragraphId, chevronId, toggleSection, imageName) {
+        const paragraph = document.getElementById(paragraphId);
+        const chevronIcon = document.getElementById(chevronId);
+        const image = document.getElementById('toggleImage'); // Image element to update
+        const imageContainer = document.querySelector('.imagemargin'); // Image container to modify margin
+
+        if (!paragraph) {
+          // console.log(`Paragraph with ID "${paragraphId}" is found successfully.`);
+          return;
+        }
+
+        // Check if the clicked paragraph is already open
+        const isOpen = paragraph.classList.contains('opacity-100');
+
+        // If the paragraph is already open, do nothing (prevent closing)
+        if (isOpen) return;
+
+        // Change the image based on the section clicked
+        image.src = `assets/images/${imageName}`;
+
+        // Add a default image as a fallback in case imageName is not found
+        image.onerror = () => {
+          image.src = `assets/images/default.jpg`; // Set to your default image path
+        };
+
+        // Adjust the margin based on the image name
+        switch (imageName) {
+          case 'mac-iphone.jpg':
+          case 'mac-ipad.jpg':
+          case 'mac-applewatch.jpg':
+            imageContainer.style.marginRight = "-18rem";
+            break;
+          default:
+            imageContainer.style.marginRight = "-18rem"; // Default margin
+            break;
+        }
+
+        // Open the clicked section
+        paragraph.classList.remove('hiddenpara', 'slide-out');
+        setTimeout(() => {
+          paragraph.classList.add('opacity-100', 'translate-y-0', 'slide-in');
+        }, 10);
+        chevronIcon.classList.remove('fa-chevron-down');
+        chevronIcon.classList.add('fa-chevron-up');
+
+        // Close other toggle sections by resetting their classes if they are open
+        document.querySelectorAll('.toggle-section').forEach((section) => {
+          if (section !== toggleSection) {
+            const id = section.getAttribute('onclick').match(/'([^']+)'/)[1];
+            const chevron = section.querySelector('i');
+            const paragraph = document.getElementById(id);
+
+            // Only close sections that are open
+            if (paragraph.classList.contains('opacity-100')) {
+              paragraph.classList.remove('opacity-100', 'translate-y-0', 'slide-in');
+              paragraph.classList.add('hiddenpara', 'slide-out');
+              chevron.classList.remove('fa-chevron-up');
+              chevron.classList.add('fa-chevron-down');
+            }
+          }
+        });
+      }
+
+      // Optionally, set the first section open by default when the page loads
+      document.addEventListener('DOMContentLoaded', () => {
+        toggleContent('toggleParagraph1', 'chevronIcon1', document.querySelector('.toggle-section'), 'mac-iphone.jpg');
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- section5 -->
+    <section class="w-full">
+
+      <div class="flex justify-between items-end px-20">
+        <div class="heading">
+          <h1 class="text-6xl font-semibold">Mac essentials.</h1>
+        </div>
+        <div class="text-lg font-light text-blue-600">
+          <a href="" class="hover:underline">
+            All Mac accessories<i class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="accessories flex justify-between py-16 px-20 overflow-hidden relative w-full gap-6 text-center">
+
+        <!-- div1 -->
+        <button class="flex w-[50%]">
+          <div class="bg-[rgba(250,250,250,1)] rounded-3xl h-[38rem]">
+            <div class="py-20 px-20">
+              <h1 class="text-3xl font-medium" style="line-height: 2rem;">Mac accessories</h1>
+              <p class="text-base font-light " style="line-height: 3rem;">Explore keyboards, mice and other
+                essentials.</p>
+              <p class="font-light hover:underline"><a class="text-blue-600" href="">Shop Mac accessories<i
+                    class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i></a></p>
+            </div>
+            <div><img src="assets/images/key,mouse.jpg" alt="" style="min-height: auto; min-width: 40rem;"></div>
+          </div>
+        </button>
+
+
+        <!-- div2 -->
+        <button class="flex w-[50%]">
+          <div class="bg-[rgba(250,250,250,1)] rounded-3xl px-20 h-[38rem]">
+            <div class="py-16">
+              <h1 class="text-3xl font-medium" style="line-height: 2rem;">Studio Display</h1>
+              <!-- <p class="text-base font-light " style="line-height: 3rem;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The 68.29 cm (27″) 5K Retina display pairs beautifully with any Mac.</p> -->
+              <p class="text-base font-light py-4 px-24" style="line-height: 1.5rem;">The 68.29 cm (27″) 5K Retina
+                display pairs beautifully with any Mac.</p>
+              <p class="font-light hover:underline"><a class="text-blue-600" href="">Learn more<i
+                    class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i></a></p>
+            </div>
+            <div><img src="assets/images/imac.jpg" alt="" style="min-height: auto; max-width: 30rem;"></div>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- section6 -->
+    <section class="w-full h-[100vh] py-40 bg-[#fafafc]">
+      <div class="" style="margin-inline-start: auto; margin-inline-end: auto; width: 87.5vw; max-width: 1680px;">
+        <div class="navcontent flex">
+          <div>
+            <ul class="">
+              <h1 class="text-[#6e6e73] font-light py-1">Explore Mac</h1>
+              <li class="text-3xl font-medium py-1"><a href="">Explore All Mac</a></li>
+              <li class="text-3xl font-medium py-1"><a href="">Macbook Air</a></li>
+              <li class="text-3xl font-medium py-1"><a href="">Macbook Pro</a></li>
+              <li class="text-3xl font-medium py-1"><a href="">iMac</a></li>
+              <li class="text-3xl font-mediu py-1"><a href="">Mac mini</a></li>
+              <li class="text-3xl font-medium py-1"><a href="">Mac Studio</a></li>
+              <li class="text-3xl font-medium py-1"><a href="">Mac Pro</a></li>
+              <li class="text-3xl font-medium py-1"><a href="">Displays</a></li>
+              <li class="pt-6 py-1 text-lg font-medium"><a href="">Compare Mac</a></li>
+              <li class="font-medium text-lg py-1"><a href="">Switch from PC to Mac</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="ml-20">
+              <h1 class="text-[#6e6e73] font-light py-1">Shop Mac</h1>
+              <li class="text-lg font-medium pt-1"><a href="">Shop Mac</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Mac Accessories</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Ways to Buy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="ml-12">
+              <h1 class="text-[#6e6e73] font-light py-1">More from Mac</h1>
+              <li class="text-lg font-medium pt-1"><a href="">Mac Support</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">AppleCare+ for Mac</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">macOS Sequoia</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Apple Intelligence</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Apps by Apple</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Continuity</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">iCLoud+</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Mac for Business</a></li>
+              <li class="text-lg font-medium pt-1"><a href="">Education</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- <script>
+  function toggleContent(selectedCategory) {
+    // Reset all buttons to default state
+    document.querySelectorAll('.toggle-button').forEach((button) => {
+      button.classList.remove('button-selected');
+      button.classList.add('button-default');
+    });
+
+    // Set the selected button's styles
+    const selectedButton = Array.from(document.querySelectorAll('.toggle-button')).find(
+      (button) => button.textContent === selectedCategory
+    );
+    selectedButton.classList.add('button-selected');
+    selectedButton.classList.remove('button-default');
+
+    // Update content based on the selected category
+    let filePath;
+    if (selectedCategory === 'Laptops') {
+      filePath = 'laptops.html';
+    } else if (selectedCategory === 'Desktops') {
+      filePath = 'desktops.html';
+    } else if (selectedCategory === 'Displays') {
+      filePath = 'displays.html';
+    }
+
+    // Load the content from the selected file
+    fetch(filePath)
+      .then(response => response.text())
+      .then(data => {
+        content.innerHTML = data;
+      })
+      .catch(error => {
+        content.innerHTML = '<p>Error loading content.</p>';
+        console.error('Error:', error);
+      });
+  }
+
+  // Show "Laptops" as the default on page load
+  document.addEventListener("DOMContentLoaded", function() {
+    toggleContent('Laptops');
+  });
+</script>
+  -->
+
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-[rgb(245,245,247)] text-[#0000008f]">
+
+    <div class="mx-auto my-0 max-w-[1050px] py-0 px-[22px]">
+      <!-- footer Content -->
+      <div class="py-4 text-xs">
+        <p class="pb-[0.8rem]">*Listed pricing is Maximum Retail Price (inclusive of all taxes).</p>
+        <p class="pb-[0.8rem]">◊Instant cashback is available with the purchase of an eligible product with qualifying
+          American Express,
+          Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. Click here to see instant
+          cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day
+          period with an eligible card. Card eligibility is subject to terms and conditions between you and your card
+          issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any
+          subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any
+          refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to
+          you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Instant
+          cashback is not available to Business customers and cannot be combined with Apple Store for Education or
+          Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback.
+        </p>
+        <p class="pb-[0.8rem]">‡No Cost EMI is available with the purchase of an eligible product made using qualifying
+          cards on 3-, 6-, 9-
+          or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are excluded
+          from No Cost EMI on 9- and 12-month tenures. Monthly pricing is rounded to the nearest rupee. Exact pricing
+          will be provided by your card issuer, subject to your card issuer's terms and conditions. Minimum order spend
+          applies as per your card issuer's threshold. No Cost EMI is not available to Business customers and cannot be
+          combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is
+          subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any
+          time without any prior notice. <a href="" class="underline text-black">Terms Apply</a>.</p>
+        <p class="pb-[0.8rem]">Representative example:</p>
+        <div class="pb-[0.8rem]">
+          <h1 class="pb-[0.8rem]">Based on a 12-month tenure. ₹79900.00 total cost includes 15.99% p.a. and No Cost EMI
+            savings of ₹6514.00,
+            paid over 12 months as 12 monthly payments of ₹6658.00.</h1>
+          <ul class="list-decimal px-5">
+            <li>Apple Intelligence is available in beta on all Mac models with M1 and later, with Siri and device
+              language
+              set to US English, as a macOS Sequoia update. English (Australia, Canada, Ireland, New Zealand, South
+              Africa, UK) language support will be available this December. Some features and support for additional
+              languages, like Chinese, English (India, Singapore), French, German, Italian, Japanese, Korean,
+              Portuguese,
+              Spanish, Vietnamese and others, will be coming over the course of the next year.</li>
+            <li>Software and content may be sold separately. Title availability is subject to change.</li>
+            <li>Testing conducted by Apple from August through October 2024 using pre-production 16″ MacBook Pro systems
+              with Apple M4 Pro, 14-core CPU, 20-core GPU, 48GB of RAM and 512GB SSD. Wireless web battery life tested
+              by
+              browsing 25 popular websites while connected to Wi-Fi. Video streaming battery life tested with 1080p
+              content in Safari while connected to Wi-Fi. All systems tested with display brightness set to 8 clicks
+              from
+              bottom and keyboard backlight off. Battery life varies by use and configuration. See <a href=""
+                class="text-black underline">apple.com/in/batteries</a> for more information.</li>
+            <li>Available on Mac computers with Apple silicon and Intel-based Mac computers with a T2 Security Chip.
+              Requires that your iPhone and Mac are signed in with the same Apple Account using two-factor
+              authentication,
+              your iPhone and Mac are near each other and have Bluetooth and Wi-Fi turned on, and your Mac is not using
+              AirPlay or Sidecar. Some iPhone features (e.g., camera and microphone) are not compatible with iPhone
+              Mirroring.</li>
+            <li>SMS requires an iPhone or iPad with iOS 8.1 or later or iPadOS. iPhone calls require an iPhone with iOS
+              8
+              or later.</li>
+            <li>Handoff requires an iPhone or iPad with iOS 8 or later or iPadOS.</li>
+            <li>Learn more at <a href="" class="text-black underline">apple.com/in/2030.</a> </li>
+            <li>Mac, iPad and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India
+              does
+              not offer trade-in for Mac, iPad and Apple Watch. Trade-in values will vary based on the condition, year
+              and
+              configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at
+              least the age of majority to be eligible to trade in for credit. Trade-in value may be applied towards a
+              qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching
+              the
+              description provided when estimate was made. Sales tax may be assessed on full value of a new device
+              purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this
+              information). Some stores may have additional requirements. Apple or its <a href=""
+                class="text-black underline">trade-in partners</a> reserve the right to refuse, cancel or limit the
+              quantity of any trade-in transaction for any reason. More details are available from Apple's trade-in
+              partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</li>
+            <li>Screen size is measured diagonally. The displays on the 13″ MacBook Air and 15″ MacBook Air and the 14″
+              MacBook Pro and 16″ MacBook Pro have rounded corners at the top. When measured as a standard rectangular
+              shape, the screens are 34.46 cm (13.6″), 38.91 cm (15.3″), 35.97 cm (14.2″) and 41.05 cm (16.2″)
+              diagonally
+              (actual viewable area is less).</li>
+            <li>Testing conducted by Apple in January 2024 using pre-production 15″ MacBook Air systems with Apple M3,
+              8-core CPU and 10-core GPU; and pre-production 13″ MacBook Air systems with Apple M3, 8-core CPU and
+              8-core
+              GPU, all configured with 8GB of RAM and 256GB SSD. Testing conducted by Apple in May 2022 using
+              pre-production 13″ MacBook Air systems with Apple M2, 8-core CPU, 8-core GPU, 8GB of RAM and 256GB SSD.
+              The
+              wireless web test measures battery life by wirelessly browsing 25 popular websites with display brightness
+              set to 8 clicks from the bottom. The Apple TV app movie playback test measures battery life by playing
+              back
+              HD 1080p content with display brightness set to 8 clicks from the bottom. Battery life varies by use and
+              configuration. See <a href="" class="text-black underline">apple.com/in/batteries</a> for more
+              information.
+            </li>
+            <li>Actual diagonal screen size is 59.69 cm (23.5″).</li>
+            <li>Screen size is measured diagonally.</li>
+          </ul>
+        </div>
+        <p class="pb-[0.8rem]">Some features may not be available in all regions or all languages.</p>
+        <p class="pb-[0.8rem]">Some features require an Apple Account, compatible hardware and compatible internet
+          access or cellular network; additional fees and terms may apply.</p>
+        <p class="pb-[0.8rem]">Some features require specific hardware and software. For more information, see “Feature
+          Requirements” at <a href="" class="text-black underline">support.apple.com/en-in/macos/upgrade.</a></p>
+        <p class="pb-[0.8rem]">Stellarium image of the M31 galaxy by Lee, Ang (HG731GZ). Creative Commons Attribution
+          License 3.0.</p>
+        <p class="pb-[0.8rem]">Assassin's Creed Shadows is coming in February 2025.</p>
+      </div>
+
+      <div class="h-[1px] w-[100%] bg-[rgba(156,163,175,0.6)]"></div>
+      <!-- footer Nav -->
+      <nav class="py-1">
+        <div class="brand flex items-center gap-3">
+          <a href="https://flowbite.com/" class="flex space-x-3 rtl:space-x-reverse">
+            <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+              </path>
+            </svg>
+            <i class="fa-solid fa-chevron-right text-xs mt-[0.8rem] text-gray-500" aria-hidden="true"></i>
+          </a>
+
+          <div class="text-[12px]">Mac</div>
+        </div>
+
+        <div class="py-[0.8rem] flex gap-16 text-[0.75rem] font-light text-gray-600 ">
+
+          <!-- 1 -->
+          <div class="">
+            <ul class="navcontent">
+              <h1 class="font-medium text-black pb-[0.6rem]">Shop and Learn</h1>
+              <li><a href="" class="hover:underline">Store</a></li>
+              <li><a href="" class="hover:underline">Mac</a></li>
+              <li><a href="" class="hover:underline">iPad</a></li>
+              <li><a href="" class="hover:underline">iPhone</a></li>
+              <li><a href="" class="hover:underline">Watch</a></li>
+              <li><a href="" class="hover:underline">AirPods</a></li>
+              <li><a href="" class="hover:underline">TV & Home</a></li>
+              <li><a href="" class="hover:underline">AirTag</a></li>
+              <li><a href="" class="hover:underline">Accessories</a></li>
+              <li><a href="" class="hover:underline">Gift Cards</a></li>
+
+              <h1 class="font-medium text-black pb-[0.6rem] pt-4">Apple Wallet</h1>
+              <li><a href="" class="hover:underline">Wallet</a></li>
+            </ul>
+          </div>
+
+          <!-- 2 -->
+          <div class="">
+            <ul class="navcontent">
+              <h1 class="font-medium text-black pb-[0.6rem]">Account</h1>
+              <li><a href="" class="hover:underline">Manage Your Apple Account</a></li>
+              <li><a href="" class="hover:underline">Apple Store Account</a></li>
+              <li><a href="" class="hover:underline">iCloud.com</a></li>
+
+              <h1 class="font-medium text-black pb-[0.6rem] pt-4">Entertainment</h1>
+              <li><a href="" class="hover:underline">Apple One</a></li>
+              <li><a href="" class="hover:underline">Apple TV+</a></li>
+              <li><a href="" class="hover:underline">Apple Music</a></li>
+              <li><a href="" class="hover:underline">Apple Arcade</a></li>
+              <li><a href="" class="hover:underline">Apple Podcasts</a></li>
+              <li><a href="" class="hover:underline">Apple Books</a></li>
+              <li><a href="" class="hover:underline">Apple Store</a></li>
+            </ul>
+          </div>
+
+
+          <!-- 3 -->
+          <div class="">
+            <ul class="navcontent">
+              <h1 class="font-medium text-black pb-[0.6rem]">Apple Store</h1>
+              <li><a href="" class="hover:underline">Find a Store</a></li>
+              <li><a href="" class="hover:underline">Genius Bar</a></li>
+              <li><a href="" class="hover:underline">Today at Apple</a></li>
+              <li><a href="" class="hover:underline">Group Reservations</a></li>
+              <li><a href="" class="hover:underline">Apple Camp</a></li>
+              <li><a href="" class="hover:underline">Apple Trade In</a></li>
+              <li><a href="" class="hover:underline">Ways to Buy</a></li>
+              <li><a href="" class="hover:underline">Recycling Programme</a></li>
+              <li><a href="" class="hover:underline">Order Status</a></li>
+              <li><a href="" class="hover:underline">Shopping Help</a></li>
+            </ul>
+          </div>
+
+          <!-- 4 -->
+          <div class="">
+            <ul class="navcontent">
+              <h1 class="font-medium text-black pb-[0.6rem]">For Business</h1>
+              <li><a href="" class="hover:underline">Apple and Business</a></li>
+              <li><a href="" class="hover:underline">Shop for Business</a></li>
+
+              <h1 class="font-medium text-black pb-[0.6rem] pt-4">For Education</h1>
+              <li><a href="" class="hover:underline">Apple and Education</a></li>
+              <li><a href="" class="hover:underline">Shop for Education</a></li>
+              <li><a href="" class="hover:underline">Shop for University</a></li>
+
+
+              <h1 class="font-medium text-black pb-[0.6rem] pt-4">For Healthcare</h1>
+              <li><a href="" class="hover:underline">Apple in Healthcare</a></li>
+              <li><a href="" class="hover:underline">Mac in Healthcare</a></li>
+              <li><a href="" class="hover:underline">Health on Apple Watch</a></li>
+            </ul>
+          </div>
+
+          <!-- 5 -->
+          <div class="">
+            <ul class="navcontent">
+              <h1 class="font-medium text-black pb-[0.6rem]">Apple Values</h1>
+              <li><a href="" class="hover:underline">Accessibility</a></li>
+              <li><a href="" class="hover:underline">Education</a></li>
+              <li><a href="" class="hover:underline">Environment</a></li>
+              <li><a href="" class="hover:underline">Privacy</a></li>
+              <li><a href="" class="hover:underline">Supply Chain</a></li>
+
+              <h1 class="font-medium text-black pb-[0.6rem] pt-4">About Apple</h1>
+              <li><a href="" class="hover:underline">Newsroom</a></li>
+              <li><a href="" class="hover:underline">Apple Leadership</a></li>
+              <li><a href="" class="hover:underline">Career Opportunities</a></li>
+              <li><a href="" class="hover:underline">Investors</a></li>
+              <li><a href="" class="hover:underline">Ethics & Compliance</a></li>
+              <li><a href="" class="hover:underline">Events</a></li>
+              <li><a href="" class="hover:underline">Contact Apple</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-[0.75rem] pb-[0.8rem]">More ways to shop: <a href="" class="underline text-blue-600">Find an
+            Apple Store</a>
+          or <a href="" class="underline text-blue-600">other retailer</a> near you. Or call 000800 040 1966.</p>
+      </nav>
+
+      <div class="h-[1px] w-[100%] bg-[rgba(156,163,175,0.6)]"></div>
+      <!-- footer data -->
+      <div class="flex text-[0.75rem] py-[0.8rem] justify-between">
+        <div class="flex gap-8">Copyright © 2024 Apple Inc. All rights reserved.
+          <div class="flex gap-2">
+            <div><a href="">Privacy Policy &nbsp; |</a></div>
+            <div><a href=""></a>Terms of Use &nbsp; |</div>
+            <div><a href="">Sales Policy &nbsp; |</a></div>
+            <div><a href="">Legal &nbsp; |</a></div>
+            <div><a href="">Site Map</a></div>
+          </div>
+        </div>
+        <p>India</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
